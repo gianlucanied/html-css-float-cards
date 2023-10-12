@@ -1,0 +1,35 @@
+:root{
+    font-family: 'Fredoka', sans-serif;
+}
+
+h1{
+    color: red;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container{
+    margin-left: 13%;
+    margin-right: 13%;
+}
+
+#photo{
+    height: 100px;
+}
+
+.first-three{
+    background-color: red;
+}
+
+
