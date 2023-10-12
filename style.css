@@ -1,35 +1,84 @@
-:root{
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 40px 0px;
     font-family: 'Fredoka', sans-serif;
 }
 
-h1{
-    color: red;
-    text-align: center;
+.contenuto-centrale{
+    max-width: 1100px;
+    margin: auto;
 }
 
-h2{
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+
+header{
     text-align: center;
-    font-size: 15px;
     margin-bottom: 30px;
 }
 
-.container::after {
-    content: "";
-    display: table;
-    clear: both;
+h1{
+    color: rgb(255, 81, 110);
+    font-size: 50px;
+    margin-bottom: 10px;
 }
 
-.container{
-    margin-left: 13%;
-    margin-right: 13%;
+h2{
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
 }
 
-#photo{
+
+.box{
+    width: calc(100% / 3);
+    padding: 15px;
+}
+
+.carte{
+    box-shadow: 5px 10px 18px white;
+    background-color: black;
+}
+
+.carte img{
+    margin-right: 20px;
+    max-width: 100px;
+}
+
+.dati-carte{
+    padding: 15px 0px;
     height: 100px;
 }
 
-.first-three{
-    background-color: red;
+
+.carte h3{
+    font-weight: 600;
+}
+
+.carte small{
+    display: block;
 }
 
 
+.carte h3, .carte small{
+    margin-bottom: 10px;
+    color: white;
+}
